@@ -1,0 +1,27 @@
+/* content */
+
+.news {
+  background-color: #d9d9d9;
+  padding: 50px 0 20px 0;
+  margin: auto;
+}
+
+.news h2 {
+}
+
+.choose ul {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
+
+.choose ul a {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.choose ul a:hover {
+  color: #d6806e;
+  transition: all 0.3s linear;
+  transform: scale(1.2);
+}

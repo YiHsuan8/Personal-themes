@@ -41,7 +41,7 @@ h3 {
 
 .header {
   background-color: whitesmoke;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
