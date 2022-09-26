@@ -1,12 +1,11 @@
-/* content */
+* {
+  /* outline: 1px solid red; */
+}
 
 .news {
   background-color: #d9d9d9;
   padding: 50px 0 20px 0;
   margin: auto;
-}
-
-.news h2 {
 }
 
 .choose ul {
@@ -24,4 +23,67 @@
   color: #d6806e;
   transition: all 0.3s linear;
   transform: scale(1.2);
+}
+
+.content {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 30px;
+  margin: auto;
+}
+
+.content a:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contentimg {
+  width: 300px;
+  height: 173px;
+}
+
+.contentimg img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+  border-radius: 5px 5px 0 0;
+}
+
+.text {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0 0 5px 5px;
+}
+
+.text p {
+  font-size: 14px;
+  line-height: 1.8rem;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 20px 0;
+}
+
+.number a {
+  color: black;
+  float: left;
+  padding: 4px 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+  margin: 0 4px;
+}
+
+.number a.active {
+  color: black;
+  border: 1px solid black;
+}
+
+.number a:hover:not(.active) {
+  background-color: rgb(153, 37, 37);
 }
