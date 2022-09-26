@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  /* color: #1c1c1c; */
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  color: #1c1c1c;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  /* padding: 20px; */
+  /* color: #a6c609; */
+  letter-spacing: 5px;
+}
+
+/* header */
+
+.header {
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navabr {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px 0; */
+}
+
+.menu ul {
+  display: flex;
+  /* gap: 10px; */
+  margin: auto;
+}
+
+.menu a {
+  /* color: #222222; */
+  /* text-decoration: none; */
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.menu a:hover {
+  color: #d6806e;
+  transition: all 0.3s linear;
+  transform: scale(1.2);
+}
+
+.book {
+  background-color: #d6806e;
+  border: none;
+  padding: 0 0;
+  font-weight: bold;
+}
+
+.book a {
+  /* text-decoration: none; */
+  /* color: #222222; */
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.book a:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.2);
+}
+
+/* footer */
+
+.footer {
+  background-color: whitesmoke;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.footer hr {
+  width: 650px;
+}
+
+.followIcon a {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.describe p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 12px;
+}
