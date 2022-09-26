@@ -32,7 +32,6 @@
 
 .bookingField label {
   padding: 0 15px;
-  /* font-size: 20px; */
 }
 
 .bookingField input,
@@ -41,15 +40,11 @@
   color: #d9d9d9;
   border: none;
   padding: 5px 10px;
-  /* font-size: 20px; */
 }
 
 .bookingField a {
-  /* text-decoration: none; */
-  /* color: #222222; */
   display: inline-block;
   padding: 10px 20px;
-  /* opacity: 1; */
 }
 
 .bookingField button {
@@ -77,15 +72,11 @@
   display: flex;
   justify-content: center;
   padding: 25px 0;
-  /* font-size: 20px; */
 }
 
 .classification ul a {
-  /* color: #222222; */
-  /* text-decoration: none; */
   display: inline-block;
   padding: 0 10px;
-  /* transition: all 0.15s linear; */
 }
 
 .classification ul a:hover {
@@ -97,9 +88,6 @@
 .discountBar {
   width: 1200px;
   margin: auto;
-  /* border: 1px solid red; */
-  /* border: 1px solid red; */
-  /* outline: 1px solid red; */
 }
 
 .discountMenu {
@@ -148,7 +136,7 @@
 .discountMore a {
   margin-top: 30px;
   padding: 5px 25px;
-  /* background-color: #b70000; */
+
   border: 1px solid rgb(74, 71, 71);
   border-radius: 45px;
 }
@@ -257,7 +245,6 @@
   height: 80px;
   text-align: center;
   line-height: 80px;
-  /* font-weight: bold; */
 }
 
 /* SNS */
