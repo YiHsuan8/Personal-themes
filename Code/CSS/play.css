@@ -1,0 +1,54 @@
+.toppic {
+  background-image: url(../Img/play/play1.jpg);
+  max-width: 100%;
+  height: 750px;
+  vertical-align: bottom;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.box {
+  margin-bottom: 30px;
+}
+
+.list {
+  margin: auto;
+  display: flex;
+  width: 1200px;
+  height: 350px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.listpic img {
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.listtext {
+  margin-left: 30px;
+}
+
+.relist {
+  flex-direction: row-reverse;
+  margin: auto;
+  display: flex;
+  width: 1200px;
+  height: 350px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+.list h3,
+.relist h3 {
+  margin-bottom: 20px;
+}
+
+.list p,
+.relist p {
+  line-height: 1.7;
+}
