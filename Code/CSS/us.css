@@ -1,0 +1,60 @@
+.content {
+  width: 1200px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin: auto;
+}
+
+.box {
+  display: flex;
+}
+
+.connection {
+  padding: 3%;
+}
+
+.connection h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.connection p {
+  font-size: 13px;
+  margin: 0px 0;
+  margin-bottom: 20px;
+}
+
+.question,
+.tel,
+.email {
+  margin-bottom: 20px;
+  width: 82%;
+  height: 1.5rem;
+}
+
+.name {
+  width: 50%;
+  height: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.radio {
+  margin-left: 30px;
+}
+
+.describe {
+  width: 100%;
+  height: 400px;
+}
+
+.submit {
+  width: 50px;
+  margin-top: 20px;
+  text-align: end;
+  align-self: end;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
