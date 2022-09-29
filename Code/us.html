@@ -90,7 +90,7 @@
                 <ul>
                   <li>
                     <div>
-                      <label for="question">
+                      <label class="questionlb" for="question">
                         問題分類
                         <select class="question" name="question">
                           <option value="" selected="" disabled="">
@@ -107,7 +107,7 @@
                   </li>
                   <li>
                     <div>
-                      <label for="name">
+                      <label class="namelb" for="name">
                         姓名
                         <input
                           class="name"
@@ -116,15 +116,15 @@
                           placeholder="請輸入姓名"
                         />
                       </label>
-                      <label for="">
-                        <input class="radio" name="sex" type="radio" />先生
-                        <input class="radio" name="sex" type="radio" />小姐
+                      <label for="sex">
+                        <!-- <input class="radio" name="sex" type="radio" />小姐 -->
+                        <!-- <input class="radio" name="sex" type="radio" />先生 -->
                       </label>
                     </div>
                   </li>
                   <li>
                     <div>
-                      <label for="tel">
+                      <label class="tellb" for="tel">
                         聯絡電話
                         <input
                           class="tel"
@@ -137,7 +137,7 @@
                   </li>
                   <li>
                     <div>
-                      <label for="mobile">
+                      <label class="mobilelb" for="mobile">
                         行動電話
                         <input
                           class="mobile"
@@ -150,7 +150,7 @@
                   </li>
                   <li>
                     <div>
-                      <label for="email">
+                      <label class="emaillb" for="email">
                         電子信箱
                         <input
                           class="email"
@@ -163,9 +163,13 @@
                   </li>
                   <li>
                     <div>
-                      <label for="">
+                      <label class="detailslb" for="details">
                         詳細內容
-                        <input class="details" type="textarea" />
+                        <input
+                          class="details"
+                          type="textarea"
+                          placeholder="請輸入內容"
+                        />
                       </label>
                     </div>
                   </li>
