@@ -1,0 +1,77 @@
+.content {
+  width: 1200px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.roomPic {
+  width: 40%;
+  background-image: url(../Img/room/book01.jpg);
+  height: 100vh;
+
+  /* vertical-align: bottom; */
+}
+
+.roomInfo {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.roombtn {
+  text-align: center;
+  padding-top: 500px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 60px;
+  border: none;
+}
+
+.roomContent {
+  padding: 2%;
+}
+
+.roomIcon i {
+  font-size: 20px;
+}
+
+.roomIcon div {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+
+.calendar {
+  display: flex;
+  border: 1px solid black;
+}
+
+.calendarLeft,
+.calendarRight {
+  width: 60%;
+  flex-direction: column;
+  padding: 3%;
+}
+
+.month p {
+  display: inline-block;
+}
+
+.roomTable {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.roomTable th {
+  padding: 4px;
+  color: #888888;
+  border-bottom: 1px solid #888;
+}
+
+.roomTable td {
+  padding: 4px;
+  color: #888888;
+}
