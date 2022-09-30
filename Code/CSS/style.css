@@ -26,7 +26,7 @@ h2 {
   background-color: #414141;
   border-radius: 5px;
   padding: 10px 0;
-  color: #d9d9d9;
+  color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@ h2 {
 .bookingField input,
 .bookingField select {
   background-color: #1c1c1c;
-  color: #d9d9d9;
+  color: aliceblue;
   border: none;
   padding: 5px 10px;
 }
@@ -47,20 +47,23 @@ h2 {
 .bookingField a {
   display: inline-block;
   padding: 10px 20px;
+  color: aliceblue;
 }
 
 .bookingField button {
-  background-color: #d6806e;
+  background-color: #b79b7e;
   margin-left: 15px;
   padding: 0 0;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   font-weight: bold;
 }
 
 .bookingField a:hover {
   transition: all 0.3s linear;
-  transform: scale(1.2);
+  background-color: #b78958;
+  border-radius: 5px;
+  /* transform: scale(1.2); */
 }
 
 /* discount */

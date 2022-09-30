@@ -1,12 +1,10 @@
 * {
   box-sizing: border-box;
-  /* outline: 1px solid red; */
 }
 
 body {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
-  /* color: #1c1c1c; */
   line-height: 1.2;
   letter-spacing: 0.1em;
 }
@@ -31,15 +29,13 @@ h2 {
 h3 {
   font-size: 1.2rem;
   font-weight: bold;
-  /* padding: 20px; */
-  /* color: #a6c609; */
   letter-spacing: 5px;
 }
 
 /* header */
 
 .header {
-  background-color: whitesmoke;
+  background-color: #edece8;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -57,30 +53,26 @@ h3 {
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  /* padding: 10px 0; */
 }
 
 .menu ul {
   display: flex;
-  /* gap: 10px; */
+
   margin: auto;
 }
 
 .menu a {
-  /* color: #222222; */
-  /* text-decoration: none; */
   display: inline-block;
   padding: 10px 20px;
 }
 
 .menu a:hover {
-  color: #d6806e;
+  color: #b79b7e;
   transition: all 0.3s linear;
-  transform: scale(1.2);
 }
 
 .book {
-  background-color: #d6806e;
+  background-color: #b79b7e;
   border: none;
   padding: 0 0;
   font-weight: bold;
@@ -91,11 +83,12 @@ h3 {
   /* color: #222222; */
   display: inline-block;
   padding: 10px 20px;
+  color: aliceblue;
 }
 
 .book a:hover {
   transition: all 0.3s linear;
-  transform: scale(1.2);
+  background-color: #b78958;
 }
 
 /* footer */
@@ -103,6 +96,7 @@ h3 {
 .footer {
   padding: 10px 0;
   text-align: center;
+  background-color: #edece8;
 }
 
 .footer hr {
