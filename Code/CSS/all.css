@@ -57,18 +57,17 @@ h3 {
 
 .menu ul {
   display: flex;
-
   margin: auto;
 }
 
 .menu a {
-  display: inline-block;
-  padding: 10px 20px;
+  margin: 10px 20px;
 }
 
 .menu a:hover {
-  color: #b79b7e;
+  color: #b78958;
   transition: all 0.3s linear;
+  border-bottom: 2px solid #b78958;
 }
 
 .book {
@@ -79,9 +78,8 @@ h3 {
 }
 
 .book a {
-  /* text-decoration: none; */
-  /* color: #222222; */
   display: inline-block;
+  border-bottom: 1px solid transparent;
   padding: 10px 20px;
   color: aliceblue;
 }
