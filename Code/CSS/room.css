@@ -10,7 +10,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: aliceblue;
+  background-image: url(../Img/bgi.jpg);
   padding: 60px 60px 40px 60px;
 }
 
@@ -38,19 +38,34 @@
 
 .roomClass a {
   display: inline-block;
-  padding: 5px 20px;
+  margin: 5px 20px;
   color: #8e8c8c;
+  border-bottom: 2px solid transparent;
+}
+
+#now {
+  color: #b78958;
+  border-bottom: 2px solid #b78958;
 }
 
 .roomClass a:hover {
   transition: all 0.15s linear;
-  color: #a9223d;
+  color: #b78958;
+  border-bottom: 2px solid #b78958;
 }
 
 .boxRight a {
   display: inline-block;
   font-size: 40px;
   margin: 0 10px;
+}
+
+.boxRight i {
+  color: #b79b7e;
+}
+
+.boxRight i:hover {
+  color: #b78958;
 }
 
 .i::before {
