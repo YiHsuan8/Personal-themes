@@ -56,7 +56,7 @@
 }
 
 .bookingField a:hover {
-  transition: all 0.3s linear;
+  transition: 0.3s linear;
   background-color: #b78958;
   border-radius: 5px;
 }
@@ -106,7 +106,7 @@
 }
 
 .discountMenu a:hover {
-  transition: all 0.3s linear;
+  transition: 0.3s linear;
   transform: scale(1.015);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
@@ -162,7 +162,7 @@
 }
 
 .discountMore a:hover {
-  transition: all 0.3s linear;
+  transition: 0.3s linear;
   transform: translateX(10px);
 }
 
@@ -197,7 +197,7 @@
 
 .roomIntroduction h2 {
   padding-bottom: 50px;
-  border-bottom: 1px solid #8e8c8c;
+  border-bottom: 2px solid #8e8c8c;
 }
 
 .txt p {
@@ -226,7 +226,7 @@
 }
 
 .roomIntroduction a:hover {
-  transition: all 0.3s linear;
+  transition: 0.3s linear;
   background-color: #b78958;
   border-radius: 5px;
 }
@@ -260,7 +260,7 @@
   height: 100%;
   vertical-align: bottom;
   transform: scale(1, 1);
-  transition: all 2s ease-out;
+  transition: 2s;
 }
 
 .imgBlock img:hover {
@@ -303,9 +303,9 @@
   width: 1200px;
   margin: auto;
   gap: 8px;
-  grid-template-columns: 240px 245px 370px 245px 240px;
+  grid-template-columns: 200px 240px 350px 240px 200px;
   grid-template-rows: 70px 70px 70px 70px 70px 70px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .column_item01 {
   grid-row: 1 / 4;
@@ -385,4 +385,28 @@
 .img_10 {
   background-image: url(../Img/sns6.PNG);
   background-position: center center;
+}
+
+.igBox a {
+  position: relative;
+}
+
+.igBox a::after {
+  content: "查看貼文";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+}
+
+.igBox a:hover::after {
+  opacity: 1;
 }
