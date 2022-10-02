@@ -1,3 +1,7 @@
+.page {
+  background-image: url(../Img/bgi.jpg);
+}
+
 .content {
   width: 1200px;
   padding-top: 3%;
@@ -7,20 +11,21 @@
 
 .box {
   display: flex;
+  justify-content: space-between;
 }
 
 .connection {
-  padding: 2%;
-  flex-direction: column;
+  margin: auto;
 }
 
 .connection h2 {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .connection p {
-  font-size: 13px;
+  font-size: 16px;
   margin-bottom: 20px;
+  color: #8e8c8c;
 }
 
 .questionlb,
@@ -43,6 +48,15 @@
 .details {
   width: 400px;
   padding: 10px 5px 10px 15px;
+  background-color: #cac9c5;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.details {
+  height: 200px;
+  resize: none;
 }
 
 .formsubmit {
@@ -51,5 +65,20 @@
 }
 
 .submit {
-  padding: 10px;
+  margin-top: 20px;
+  padding: 10px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #b79b7e;
+  color: aliceblue;
+  border: 1px solid #b79b7e;
 }
+
+.submit:hover {
+  background-color: transparent;
+  color: #b79b7e;
+}
+
+/* .details {
+  col: 200px;
+} */

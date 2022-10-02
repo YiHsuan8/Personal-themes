@@ -1,3 +1,4 @@
+/* banner */
 .toppic {
   background-image: url(../Img/play/play1.jpg);
   max-width: 100%;
@@ -5,22 +6,33 @@
   vertical-align: bottom;
 }
 
+/* content */
+
+.content {
+  background-image: url(../Img/bgi.jpg);
+}
+
 h2 {
   text-align: center;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .box {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .list {
   margin: auto;
   display: flex;
-  width: 1200px;
-  height: 350px;
+  justify-content: space-evenly;
+  width: 1100px;
   margin-top: 50px;
   align-items: center;
+}
+
+.listpic {
+  width: 470px;
+  height: 330px;
 }
 
 .listpic img {
@@ -29,26 +41,45 @@ h2 {
   vertical-align: bottom;
 }
 
-.listtext {
-  margin-left: 30px;
+.listtextrig {
+  width: 470px;
+  margin-right: 80px;
+  padding: 1rem;
+}
+
+.listtextlef {
+  width: 470px;
+  margin-left: 80px;
+  padding: 1rem;
 }
 
 .relist {
   flex-direction: row-reverse;
-  margin: auto;
-  display: flex;
-  width: 1200px;
-  height: 350px;
-  margin-top: 50px;
-  align-items: center;
 }
 
-.list h3,
-.relist h3 {
+h3 {
   margin-bottom: 20px;
+  color: #7f705f;
 }
 
 .list p,
 .relist p {
   line-height: 1.7;
+  color: #8e8c8c;
+}
+
+.list a,
+.relist a {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 50px;
+  background-color: #b79b7e;
+  color: aliceblue;
+  border: 1px solid #b79b7e;
+}
+
+.list a:hover,
+.relist a:hover {
+  background-color: transparent;
+  color: #b79b7e;
 }
