@@ -1,9 +1,9 @@
 * {
   box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 body {
-  font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.1em;
@@ -82,10 +82,11 @@ h3 {
   border-bottom: 1px solid transparent;
   padding: 10px 20px;
   color: aliceblue;
+  letter-spacing: 0.1em;
 }
 
 .book a:hover {
-  transition: all 0.3s linear;
+  transition: all 0.15s linear;
   background-color: #b78958;
 }
 

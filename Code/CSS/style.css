@@ -44,21 +44,21 @@
   display: inline-block;
   padding: 10px 20px;
   color: aliceblue;
+  letter-spacing: 0.1em;
 }
 
 .bookingField button {
   background-color: #b79b7e;
+  color: aliceblue;
   margin-left: 15px;
   padding: 0 0;
   border: none;
-  border-radius: 5px;
   font-weight: bold;
 }
 
 .bookingField a:hover {
-  transition: 0.3s linear;
+  transition: 0.15s linear;
   background-color: #b78958;
-  border-radius: 5px;
 }
 
 /* discount */
@@ -219,16 +219,18 @@
 .roomIntroduction a {
   display: inline-block;
   margin-top: 50px;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 10px 50px;
+  border: 1px solid #b79b7e;
   background-color: #b79b7e;
   color: aliceblue;
+  font-weight: bold;
 }
 
 .roomIntroduction a:hover {
-  transition: 0.3s linear;
-  background-color: #b78958;
-  border-radius: 5px;
+  transition: all 0.15s linear;
+  background-color: transparent;
+  color: #b79b7e;
+  border: 1px solid #b79b7e;
 }
 
 /* introduce */

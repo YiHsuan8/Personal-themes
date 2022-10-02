@@ -82,25 +82,39 @@
   color: #8e8c8c;
 }
 
-.roomButton {
+.button a {
   margin-top: 40px;
-  border: none;
+  border: 1px snow #b79b7e;
   padding: 0 0;
-}
-
-.roomButton a {
   display: inline-block;
   padding: 10px 50px;
-  background-color: #c3a47e;
-  color: aliceblue;
-  font-weight: bold;
-  border: 1px solid #c3a47e;
 }
 
-.roomButton a:hover {
+.roomMore {
+  background-color: transparent;
+  color: #b79b7e;
+  font-weight: bold;
+  border: 1px solid #b79b7e;
+}
+
+.roomMore:hover {
+  transition: all 0.15s linear;
+  background-color: #b79b7e;
+  color: aliceblue;
+}
+
+.roomBook {
+  background-color: #b79b7e;
+  border: 1px solid #b79b7e;
+  font-weight: bold;
+  color: aliceblue;
+  margin-left: 5px;
+}
+
+.roomBook:hover {
   transition: all 0.15s linear;
   background-color: transparent;
-  color: #c3a47e;
+  color: #b79b7e;
 }
 
 .boxRight i:hover {

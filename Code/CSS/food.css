@@ -54,22 +54,24 @@ p {
 
 .rightBox {
   display: inline-block;
-  margin-top: 58px;
+  margin-top: 50px;
 }
 
 .rightBox a {
-  padding: 10px 20px;
-  border: 2px solid #b79b7e;
+  padding: 10px 50px;
+  border: 1px solid #b79b7e;
+  font-weight: bold;
 }
 
 .fooddown {
   color: #7f705f;
+  margin-right: 5px;
 }
 
 .fooddown:hover {
   background-color: #b79b7e;
   color: aliceblue;
-  transition: all 0.3s linear;
+  transition: all 0.15s linear;
 }
 
 .foodbook {
@@ -80,7 +82,7 @@ p {
 .foodbook:hover {
   color: #7f705f;
   background-color: transparent;
-  transition: all 0.3s linear;
+  transition: all 0.15s linear;
 }
 
 .featured {

@@ -75,6 +75,7 @@
 }
 
 .submit:hover {
+  transition: all 0.15s linear;
   background-color: transparent;
   color: #b79b7e;
   cursor: pointer;

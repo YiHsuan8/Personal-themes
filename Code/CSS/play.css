@@ -1,11 +1,3 @@
-/* banner */
-.toppic {
-  background-image: url(../Img/play/play1.jpg);
-  max-width: 100%;
-  height: 750px;
-  vertical-align: bottom;
-}
-
 /* content */
 
 .content {
@@ -76,10 +68,12 @@ h3 {
   background-color: #b79b7e;
   color: aliceblue;
   border: 1px solid #b79b7e;
+  font-weight: bold;
 }
 
 .list a:hover,
 .relist a:hover {
+  transition: all 0.15s linear;
   background-color: transparent;
   color: #b79b7e;
 }
