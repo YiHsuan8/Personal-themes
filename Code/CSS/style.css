@@ -162,7 +162,7 @@
 }
 
 .discountMore a:hover {
-  transition: 0.3s linear;
+  transition: 0.15s linear;
   transform: translateX(10px);
 }
 
