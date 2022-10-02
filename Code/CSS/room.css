@@ -49,7 +49,7 @@
 }
 
 .roomClass a:hover {
-  transition: all 0.15s linear;
+  transition: all 0.01s linear;
   color: #b78958;
   border-bottom: 2px solid #b78958;
 }
@@ -92,18 +92,23 @@
   display: inline-block;
   padding: 10px 50px;
   background-color: #c3a47e;
-  color: azure;
+  color: aliceblue;
   font-weight: bold;
   border: 1px solid #c3a47e;
 }
 
 .roomButton a:hover {
   transition: all 0.15s linear;
-  background-color: azure;
+  background-color: transparent;
   color: #c3a47e;
 }
 
 .boxRight i:hover {
   transition: all 0.15s linear;
   color: #c3a47e;
+}
+
+.now {
+  color: #b78958;
+  border-bottom: 2px solid #b78958;
 }

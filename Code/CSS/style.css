@@ -92,7 +92,7 @@
 .classification ul a:hover {
   color: #b78958;
   border-bottom: 2px solid #b78958;
-  transition: all 0.3s linear;
+  transition: all 0.01s linear;
 }
 
 .discountBar {
@@ -273,7 +273,7 @@
 
 .lfbt {
   position: absolute;
-  bottom: -58px;
+  bottom: -70px;
   left: -50px;
 }
 

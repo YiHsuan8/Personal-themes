@@ -26,7 +26,7 @@ h2 {
 
 .choose ul a:hover {
   color: #b78958;
-  transition: all 0.3s linear;
+  transition: all 0.01s linear;
   border-bottom: 2px solid #b78958;
 }
 
