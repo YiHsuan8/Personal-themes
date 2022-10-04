@@ -42,6 +42,12 @@ h3 {
   width: 100%;
 }
 
+.logo {
+  margin: 5px 0;
+  width: 130px;
+  height: 60px;
+}
+
 .logo img {
   width: 100%;
 }
@@ -65,13 +71,13 @@ h3 {
 }
 
 .menu a:hover {
-  color: #b78958;
+  color: #a86a28;
   transition: all 0.01s linear;
-  border-bottom: 2px solid #b78958;
+  border-bottom: 2px solid #a86a28;
 }
 
 .book {
-  background-color: #b79b7e;
+  background-color: #b78958;
   border: none;
   padding: 0 0;
   font-weight: bold;
@@ -87,7 +93,7 @@ h3 {
 
 .book a:hover {
   transition: all 0.15s linear;
-  background-color: #b78958;
+  background-color: #a86a28;
 }
 
 /* footer */

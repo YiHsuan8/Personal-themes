@@ -85,13 +85,13 @@
 }
 
 #now {
-  color: #b78958;
-  border-bottom: 2px solid #b78958;
+  color: #a86a28;
+  border-bottom: 2px solid #a86a28;
 }
 
 .classification ul a:hover {
-  color: #b78958;
-  border-bottom: 2px solid #b78958;
+  color: #a86a28;
+  border-bottom: 2px solid #a86a28;
   transition: all 0.01s linear;
 }
 
@@ -106,9 +106,9 @@
 }
 
 .discountMenu a:hover {
-  transition: 0.3s linear;
-  transform: scale(1.015);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.2s linear;
+  transform: scale(1.005);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .discountCard {
@@ -219,7 +219,7 @@
 .roomIntroduction a {
   display: inline-block;
   margin-top: 50px;
-  padding: 10px 50px;
+  padding: 10px 20px;
   border: 1px solid #b79b7e;
   background-color: #b79b7e;
   color: aliceblue;

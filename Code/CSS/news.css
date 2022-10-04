@@ -25,14 +25,14 @@ h2 {
 }
 
 .choose ul a:hover {
-  color: #b78958;
+  color: #a86a28;
   transition: all 0.01s linear;
-  border-bottom: 2px solid #b78958;
+  border-bottom: 2px solid #a86a28;
 }
 
 #now {
-  color: #b78958;
-  border-bottom: 2px solid #b78958;
+  color: #a86a28;
+  border-bottom: 2px solid #a86a28;
 }
 
 .content {
@@ -40,14 +40,14 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   margin: auto;
 }
 
 .content a:hover {
-  transition: all 0.3s linear;
-  transform: scale(1.015);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s linear;
+  transform: scale(1.005);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .contentimg {
