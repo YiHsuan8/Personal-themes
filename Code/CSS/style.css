@@ -1,7 +1,6 @@
 .banner img {
   width: 100%;
   height: 700px;
-  position: relative;
   vertical-align: bottom;
 }
 
@@ -10,10 +9,6 @@
 .bookingBgc {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  bottom: 3%;
 }
 
 .bookingField {
@@ -26,6 +21,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 640px;
 }
 
 .bookingField label {
@@ -48,17 +45,19 @@
 }
 
 .bookingField button {
-  background-color: #b79b7e;
+  background-color: #b78958;
   color: aliceblue;
   margin-left: 15px;
   padding: 0 0;
   border: none;
   font-weight: bold;
+  border-radius: 7px;
 }
 
 .bookingField a:hover {
   transition: 0.15s linear;
-  background-color: #b78958;
+  background-color: #a86a28;
+  border-radius: 7px;
 }
 
 /* discount */
@@ -220,17 +219,19 @@
   display: inline-block;
   margin-top: 50px;
   padding: 10px 20px;
-  border: 1px solid #b79b7e;
-  background-color: #b79b7e;
+  border: 1px solid #b78958;
+  background-color: #b78958;
   color: aliceblue;
   font-weight: bold;
+  border-radius: 7px;
 }
 
 .roomIntroduction a:hover {
   transition: all 0.15s linear;
   background-color: transparent;
-  color: #b79b7e;
-  border: 1px solid #b79b7e;
+  color: #b78958;
+  border: 1px solid #b78958;
+  border-radius: 8px;
 }
 
 /* introduce */
