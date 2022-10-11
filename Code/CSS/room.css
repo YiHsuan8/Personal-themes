@@ -1,22 +1,41 @@
-.contentBgi {
-  width: 100%;
-  height: 100vh;
-  background-image: url(../Img/room/roombgi1.jpeg);
+.content {
+  background-image: url(../Img/bgi.jpg);
+}
+
+.contentOne,
+.contentTwo,
+.contentThree,
+.contentFour {
   position: relative;
+  margin-bottom: 20px;
+}
+
+.contentFour {
+  margin-bottom: 0;
+}
+
+.contentimg img {
+  width: 100%;
+  height: 90vh;
+  vertical-align: middle;
 }
 
 .contentAll {
-  width: 850px;
+  width: 750px;
+  background-color: #dfdfdf;
+  opacity: 0.9;
+  padding: 20px 50px;
+}
+
+.right {
   position: absolute;
   bottom: 0;
   right: 0;
-  background-image: url(../Img/bgi.jpg);
-  padding: 60px 60px 40px 60px;
 }
-
-.contentBox {
-  display: flex;
-  justify-content: space-between;
+.left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .title {
@@ -27,6 +46,7 @@
 
 .boxLeft p {
   color: #7f705f;
+  opacity: 1;
 }
 
 .roomClass ul {
@@ -36,50 +56,17 @@
   margin-left: -20px;
 }
 
-.roomClass a {
-  display: inline-block;
-  margin: 5px 20px;
-  color: #8e8c8c;
-  border-bottom: 2px solid transparent;
-}
-
-#now {
-  color: #b78958;
-  border-bottom: 2px solid #b78958;
-}
-
-.roomClass a:hover {
-  transition: all 0.01s linear;
-  color: #b78958;
-  border-bottom: 2px solid #b78958;
-}
-
-.boxRight a {
-  display: inline-block;
-  font-size: 40px;
-  margin: 0 10px;
-}
-
-.boxRight i {
-  color: #b79b7e;
-}
-
-.boxRight i:hover {
-  color: #b78958;
-}
-
-.i::before {
-  content: "|";
-  color: #8e8c8c;
-}
-
 .text {
   margin-top: 20px;
 }
 
 .text p {
   font-size: 14px;
-  color: #8e8c8c;
+  color: #4a4a4a;
+}
+
+.text span {
+  color: #7f705f;
 }
 
 .button a {
@@ -88,41 +75,4 @@
   padding: 0 0;
   display: inline-block;
   padding: 10px 50px;
-}
-
-.roomMore {
-  background-color: transparent;
-  color: #b79b7e;
-  font-weight: bold;
-  border: 1px solid #b79b7e;
-}
-
-.roomMore:hover {
-  transition: all 0.15s linear;
-  background-color: #b79b7e;
-  color: aliceblue;
-}
-
-.roomBook {
-  background-color: #b79b7e;
-  border: 1px solid #b79b7e;
-  font-weight: bold;
-  color: aliceblue;
-  margin-left: 5px;
-}
-
-.roomBook:hover {
-  transition: all 0.15s linear;
-  background-color: transparent;
-  color: #b79b7e;
-}
-
-.boxRight i:hover {
-  transition: all 0.15s linear;
-  color: #c3a47e;
-}
-
-.now {
-  color: #b78958;
-  border-bottom: 2px solid #b78958;
 }
