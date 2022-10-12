@@ -96,6 +96,12 @@ h3 {
   background-color: #a86a28;
 }
 
+@media screen and (max-width: 768) {
+  .menu {
+    display: none;
+  }
+}
+
 /* footer */
 
 .footer {

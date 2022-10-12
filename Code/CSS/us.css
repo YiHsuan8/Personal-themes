@@ -2,6 +2,12 @@
   background-image: url(../Img/bgi.jpg);
 }
 
+h2 {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
 .content {
   width: 1200px;
   padding-top: 3%;
@@ -51,7 +57,6 @@
   background-color: #cac9c5;
   border: none;
   font-size: 16px;
-  font-weight: bold;
 }
 
 .details {
@@ -66,22 +71,22 @@
 
 .submit {
   margin-top: 20px;
-  padding: 10px 50px;
+  padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #b79b7e;
+  background-color: #b78958;
   color: aliceblue;
-  border: 1px solid #b79b7e;
+  border: 1px solid #b78958;
 }
 
 .submit:hover {
   transition: all 0.15s linear;
   background-color: transparent;
-  color: #b79b7e;
+  color: #a86a28;
   cursor: pointer;
 }
 
 .now {
-  color: #b78958;
-  border-bottom: 2px solid #b78958;
+  color: #a86a28;
+  border-bottom: 2px solid #a86a28;
 }

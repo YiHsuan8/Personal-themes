@@ -64,10 +64,10 @@ h3 {
 .relist a {
   display: inline-block;
   margin-top: 40px;
-  padding: 10px 50px;
-  background-color: #b79b7e;
+  padding: 10px 20px;
+  background-color: #b78958;
   color: aliceblue;
-  border: 1px solid #b79b7e;
+  border: 1px solid #b78958;
   font-weight: bold;
 }
 
@@ -75,10 +75,10 @@ h3 {
 .relist a:hover {
   transition: all 0.15s linear;
   background-color: transparent;
-  color: #b79b7e;
+  color: #a86a28;
 }
 
 .now {
-  color: #b78958;
-  border-bottom: 2px solid #b78958;
+  color: #a86a28;
+  border-bottom: 2px solid #a86a28;
 }
