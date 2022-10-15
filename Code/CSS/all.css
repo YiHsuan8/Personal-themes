@@ -36,7 +36,7 @@ h3 {
 
 .header {
   background-color: #edece8;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -59,6 +59,7 @@ h3 {
   margin: auto;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
 }
 
 .menu ul {
@@ -96,10 +97,123 @@ h3 {
   background-color: #a86a28;
 }
 
-@media screen and (max-width: 768) {
-  .menu {
+.showMenu {
+  display: none;
+}
+
+.bookRwd {
+  display: none;
+}
+
+#toggler {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 1024px) {
+  .logo {
+    height: auto;
+  }
+
+  .logo img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .header,
+  .navabr {
+    max-height: 61px;
+  }
+
+  .book {
     display: none;
   }
+
+  .hamburger {
+    width: 100px;
+    height: 100px;
+    background-color: #b78958;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 1px;
+    background-color: aliceblue;
+    position: relative;
+    transition: transform 0.3s linear, top 0.3s linear 0.3s;
+    top: 0;
+  }
+
+  .hamburger span:nth-child(2) {
+    margin-top: 7px;
+  }
+
+  #toggler {
+    display: none;
+  }
+
+  #toggler:checked + label .hamburger span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 4px;
+    transition: top 0.3s linear, transform 0.3s linear 0.3s;
+  }
+  #toggler:checked + label .hamburger span:nth-child(2) {
+    transform: rotate(-45deg);
+    top: -4px;
+    transition: top 0.3s linear, transform 0.3s linear 0.3s;
+  }
+
+  .hamburger {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 16px;
+  }
+
+  .hb {
+    background-color: #b78958;
+    height: 40px;
+    padding: 0 10px;
+  }
+
+  .menu {
+    background-color: #edece8;
+    opacity: 0.9;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 61px;
+    left: 0;
+    transform: scaleY(0);
+    /*  */
+    /* transition: transform 0.3s linear; */
+    /*  */
+    transform-origin: 50% 0;
+  }
+
+  #toggler:checked ~ .menu {
+    transform: scaleY(1);
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin-top: 60px;
+  }
+
+  .menu a {
+    color: #1c1c1c;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
 }
 
 /* footer */
@@ -111,7 +225,7 @@ h3 {
 }
 
 .footer hr {
-  width: 650px;
+  max-width: 650px;
 }
 
 .followIcon a {
@@ -127,4 +241,7 @@ h3 {
 .copyright p {
   font-size: 9px;
   color: rgb(184, 184, 184);
+}
+
+@media screen and (max-width: 768px) {
 }

@@ -1,7 +1,17 @@
-.banner img {
-  width: 100%;
-  height: 700px;
-  vertical-align: bottom;
+.banner {
+  background-image: url(../Img/banner1.jpg);
+  height: 750px;
+  background-position: center center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
 }
 
 /*  booking field */
@@ -22,7 +32,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 640px;
+  top: 600px;
 }
 
 .bookingField label {
@@ -60,6 +70,18 @@
   border-radius: 7px;
 }
 
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .bookingBgc {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+
 /* discount */
 
 .center {
@@ -95,7 +117,7 @@
 }
 
 .discountBar {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -171,6 +193,48 @@
 .discountMore a:hover {
   transition: 0.15s linear;
   transform: translateX(10px);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+}
+
+.discountRwd {
+  display: flex;
+  gap: 13.33333px;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1200px) {
+  .discountMenu {
+    display: block;
+  }
+
+  .RWD {
+    padding-bottom: 30px;
+  }
+
+  .discountMore {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+  .discountRwd {
+    display: block;
+  }
+
+  .card {
+    padding-bottom: 30px;
+  }
+
+  .RWD {
+    padding-bottom: 0px;
+  }
 }
 
 /* Room introduction */
