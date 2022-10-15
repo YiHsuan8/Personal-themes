@@ -1,6 +1,6 @@
 .banner {
   background-image: url(../Img/banner1.jpg);
-  height: 750px;
+  height: 650px;
   background-position: center center;
   background-size: cover;
 }
@@ -206,7 +206,7 @@
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1220px) {
   .discountMenu {
     display: block;
   }
@@ -244,6 +244,9 @@
 }
 
 .introductionImg {
+  background-image: url(../Img/other1.jpg);
+  background-position: center center;
+  background-size: cover;
   height: 700px;
 }
 
@@ -263,7 +266,7 @@
   top: 50%;
   right: 5%;
   transform: translate(0%, -50%);
-  padding: 120px 45px 30px;
+  padding: 80px 45px 30px;
 }
 
 .roomIntroduction h2 {
@@ -271,25 +274,25 @@
   border-bottom: 2px solid #8e8c8c;
 }
 
-.txt p {
+.txt h3 {
   margin-top: 50px;
   margin-bottom: 40px;
   letter-spacing: 0.2rem;
 }
 
 .txt span {
-  line-height: 2rem;
+  line-height: 1.7rem;
   letter-spacing: 0.2rem;
   color: #8e8c8c;
 }
 
 .area {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .roomIntroduction a {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 10px 20px;
   border: 1px solid #b78958;
   background-color: #b78958;
@@ -304,6 +307,37 @@
   color: #b78958;
   border: 1px solid #b78958;
   border-radius: 7px;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .roomIntroduction {
+    position: static;
+    transform: translate(0%, 0%);
+    width: 100%;
+    padding: 40px 50px;
+  }
+
+  .roomIntroduction h2 {
+    padding-bottom: 20px;
+  }
+
+  .roomIntroduction h3 {
+    margin: 20px 0;
+  }
+
+  .roomIntroduction p {
+    margin: 20px 0px;
+  }
+
+  .area {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
 }
 
 /* introduce */
@@ -359,6 +393,15 @@
 .lfbt p {
   margin-top: 10px;
   color: #8e8c8c;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
 }
 
 /* SNS */
