@@ -356,7 +356,6 @@
 .imgBlock {
   width: 337px;
   margin: 0px 31.5px;
-  height: 490px;
 }
 
 .imgBlockdown {
@@ -380,7 +379,7 @@
 }
 
 .lfbt {
-  /* position: relative; */
+  position: relative;
   bottom: -5px;
   left: -40px;
   padding: 10px 15px;
@@ -408,6 +407,17 @@
 
   .imgBlock {
     margin: auto;
+  }
+
+  .lfbt {
+    position: static;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .intro {
+    padding-top: 50px;
+    padding-bottom: 10px;
   }
 }
 
