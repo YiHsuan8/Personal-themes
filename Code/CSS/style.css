@@ -1,9 +1,13 @@
+/* banner */
+
 .banner {
   background-image: url(../Img/banner1.jpg);
   height: 650px;
   background-position: center center;
   background-size: cover;
 }
+
+/* banner RWD */
 
 @media screen and (max-width: 1200px) {
 }
@@ -69,6 +73,8 @@
   background-color: #a86a28;
   border-radius: 7px;
 }
+
+/*  booking field  RWD*/
 
 @media screen and (max-width: 1200px) {
 }
@@ -206,6 +212,8 @@
   justify-content: space-evenly;
 }
 
+/* discount RWD */
+
 @media screen and (max-width: 1220px) {
   .discountMenu {
     display: block;
@@ -309,6 +317,8 @@
   border-radius: 7px;
 }
 
+/* Room introduction RWD */
+
 @media screen and (max-width: 1200px) {
 }
 
@@ -393,6 +403,8 @@
   margin-top: 10px;
   color: #8e8c8c;
 }
+
+/* introduce RWD */
 
 @media screen and (max-width: 1200px) {
 }
@@ -545,6 +557,8 @@
 .igBox a:hover::after {
   opacity: 1;
 }
+
+/* SNS RWD */
 
 @media screen and (max-width: 1220px) {
   .igBox {
