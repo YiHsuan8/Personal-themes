@@ -350,7 +350,7 @@
   display: flex;
   max-width: 1200px;
   margin: auto;
-  padding: 100px 10px;
+  padding: 50px 10px;
 }
 
 .imgBlock {
@@ -544,4 +544,36 @@
 
 .igBox a:hover::after {
   opacity: 1;
+}
+
+@media screen and (max-width: 1220px) {
+  .igBox {
+    grid-template-columns: 240px 350px 240px;
+    margin: auto;
+    width: 846px;
+  }
+
+  .column_item01,
+  .column_item10 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .igBox {
+    grid-template-columns: 350px;
+    margin: auto;
+    width: 366px;
+  }
+  .column_item02,
+  .column_item04,
+  .column_item05,
+  .column_item07,
+  .column_item08,
+  .column_item09 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
 }
