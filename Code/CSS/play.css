@@ -24,7 +24,7 @@ h2 {
 }
 
 .listpic {
-  width: 470px;
+  max-width: 470px;
   height: 330px;
 }
 
@@ -36,13 +36,11 @@ h2 {
 
 .listtextrig {
   width: 470px;
-  margin-right: 80px;
   padding: 1rem;
 }
 
 .listtextlef {
   width: 470px;
-  margin-left: 80px;
   padding: 1rem;
 }
 
@@ -82,4 +80,34 @@ h3 {
 .now {
   color: #a86a28;
   border-bottom: 2px solid #a86a28;
+}
+
+/* content RWD */
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1024px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .list:nth-child(4) {
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    padding-bottom: 50px;
+  }
+
+  .listtextrig,
+  .listtextlef {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
 }
