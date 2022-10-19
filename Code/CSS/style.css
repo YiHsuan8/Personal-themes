@@ -16,6 +16,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .banner {
+    height: 400px;
+    width: 100%;
+  }
 }
 
 /*  booking field */
@@ -96,7 +100,7 @@
 
 .discount {
   background-image: url(../Img/bgi.jpg);
-  padding: 50px 0 60px 0;
+  padding: 50px 0 30px 0;
 }
 
 .classification ul {
@@ -184,7 +188,7 @@
 }
 
 .discountMore {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   display: flex;
   justify-content: end;
 }
@@ -197,7 +201,7 @@
 }
 
 .discountMore a:hover {
-  transition: 0.15s linear;
+  transition: 0.5s;
   transform: translateX(10px);
 }
 
@@ -242,6 +246,14 @@
 
   .RWD {
     padding-bottom: 0px;
+  }
+
+  .discountMore a {
+    margin-top: 10px;
+  }
+
+  .discountMore {
+    margin-top: 0px;
   }
 }
 

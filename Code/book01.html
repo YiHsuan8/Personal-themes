@@ -39,37 +39,56 @@
             </h1>
           </div>
 
-          <div class="menu">
-            <ul>
-              <li>
-                <a href="./news.html">優惠消息</a>
-              </li>
-              <li>
-                <a href="./room.html">房型介紹</a>
-              </li>
-              <li>
-                <a href="./food.html">餐飲美饌</a>
-              </li>
-              <li>
-                <a href="./play.html">休閒設施</a>
-              </li>
-              <li>
-                <a href="#">周邊景點</a>
-              </li>
-              <li>
-                <a href="./us.html">聯絡我們</a>
-              </li>
-            </ul>
+          <!-- 漢堡 -->
+
+          <div class="hb">
+            <!-- 漢堡Checkbox -->
+
+            <input type="checkbox" id="toggler" />
+
+            <!-- menu_btn -->
+
+            <label for="toggler" class="menu_btn">
+              <div class="hamburger">
+                <span></span>
+                <span></span>
+              </div>
+            </label>
+
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="./news.html">優惠消息</a>
+                </li>
+                <li>
+                  <a href="./room.html">房型介紹</a>
+                </li>
+                <li>
+                  <a href="./food.html">餐飲美饌</a>
+                </li>
+                <li>
+                  <a href="./play.html">休閒設施</a>
+                </li>
+                <li>
+                  <a href="#">周邊景點</a>
+                </li>
+                <li>
+                  <a href="./us.html">聯絡我們</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <button class="book"><a href="#">線上訂房</a></button>
         </nav>
       </div>
 
-      <!-- content -->
+      <!-- page -->
 
       <div class="page">
         <div class="content">
+          <!-- left -->
+
           <div class="left">
             <form>
               <div class="formGroup">
@@ -83,7 +102,9 @@
                     placeholder="請輸入姓名"
                   />
                 </label>
+
                 <br />
+
                 <label class="tellb" for="tel">
                   聯絡電話
                   <br />
@@ -94,13 +115,17 @@
                     placeholder="請輸入聯絡電話"
                   />
                 </label>
+
                 <br />
+
                 <label class="checkInlb" for="checkIn">
                   入住時間
                   <br />
                   <input type="date" class="formControl" id="checkIn" />
                 </label>
+
                 <br />
+
                 <label class="checkOutlb" for="checkOut">
                   退房時間
                   <br />
@@ -110,6 +135,7 @@
                 <p class="info">1 天 平日</p>
               </div>
             </form>
+
             <div class="bill">
               <p class="billText">總計</p>
               <p class="billPrice">$81,000</p>
@@ -117,11 +143,16 @@
 
             <button type="button" class="bookbutton">確認送出</button>
           </div>
+
+          <!-- right -->
+
           <div class="right">
             <h2>豪華套房</h2>
+
             <div class="roomContent">
               <p>2 人・加大雙人・附早餐・衛浴 1 間・25 平方公尺</p>
-              <p>平日（一～四）價格：81,000 / 假日（五〜日）價格：91,000</p>
+              <p>平日（一～四）價格：81,000</p>
+              <p>假日（五〜日）價格：91,000</p>
 
               <div class="roomIcons">
                 <div class="icon breakfast">
@@ -159,65 +190,71 @@
                   <p>沖泡設備</p>
                 </div>
               </div>
-              <!-- roomIcons end -->
+
+              <!-- roomOrderInfo -->
 
               <div class="roomOrderInfo">
                 <h3>訂房資訊</h3>
                 <ul>
+                  <li>・入住時間：最早 15：00，最晚 21：00</li>
+
+                  <li>・退房時間：最晚 12：00</li>
+
                   <li>
-                    ・入住時間：最早 15：00，最晚
-                    21：00；退房時間：10：00，請自行確認行程安排。
+                    ・若您有任何問題，歡迎撥打 (02)1234-1543 ( 服務時間
+                    週一至週六 09:00 - 18:00 )。
                   </li>
-                  <li>
-                    ・若您有任何問題，歡迎撥打 (02)23576-1543 ( 服務時間
-                    週一至週六 10:00 - 18:00 )。
-                  </li>
+
                   <li>・提前入住或延後退房需另收取相關費用。</li>
+
                   <li>・全面禁止吸菸。</li>
                 </ul>
               </div>
-              <!-- roomOrderInfo end -->
+
+              <!--roomOrderTitle -->
 
               <div class="roomOrderTitle">
                 <h3>預約流程</h3>
               </div>
-              <!-- roomOrderTitle end -->
+
+              <!-- roomOrderProcess -->
 
               <div class="roomOrderProcess">
                 <div class="box box1">
                   <div class="boxTitle">
                     <i class="fa-solid fa-table-list"></i>
                   </div>
+
                   <div class="boxContent">
-                    <p>確認房型</p>
-                    <p>填寫基本資料</p>
-                    <p>送出線上預約單(確認基本資料是否正確)</p>
+                    <p>選擇房型並確認房型</p>
+                    <p>填寫入住者基本資料</p>
+                    <p>送出線上預約單(確認資料是否正確)</p>
                   </div>
                 </div>
-                <!-- box1 end -->
+
                 <div class="box box2">
                   <div class="boxTitle">
                     <i class="fa-solid fa-envelope"></i>
                   </div>
+
                   <div class="boxContent">
                     <p>系統回覆是否預訂成功</p>
                     <p>並以簡訊發送訂房通知</p>
-                    <p>(若未收到簡訊請來電確認)</p>
+                    <p>確認簡訊是否正確(若未收到簡訊請來電確認)</p>
                   </div>
                 </div>
-                <!-- box2 end -->
 
                 <div class="box box3">
                   <div class="boxTitle">
                     <i class="fa-regular fa-credit-card"></i>
                   </div>
+
                   <div class="boxContent">
                     <p>入住當日憑訂房通知</p>
                     <p>以現金或刷卡付款即可</p>
                     <p>(僅接受Visa、JCB、MasterCard)</p>
                   </div>
                 </div>
-                <!-- box3 end -->
               </div>
             </div>
           </div>

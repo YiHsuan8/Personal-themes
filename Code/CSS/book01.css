@@ -1,18 +1,21 @@
+/* page */
+
 .page {
   background-image: url(../Img/bgi.jpg);
 }
 
 .content {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
-  /* background-image: url(../Img/other1.jpg); */
   justify-content: space-around;
 }
 
+/* left */
+
 .left {
-  width: 25%;
-  padding: 8% 2%;
+  width: 300px;
+  padding: 96px 24px;
   display: flex;
   flex-direction: column;
   background-color: #dbdad5;
@@ -67,6 +70,8 @@ input {
   transition: all 0.15s linear;
 }
 
+/* right */
+
 .right {
   padding: 5% 0;
 }
@@ -91,6 +96,8 @@ input {
   color: #7f705f;
 }
 
+/* roomOrderInfo */
+
 .roomOrderInfo h3 {
   margin-bottom: 10px;
 }
@@ -99,10 +106,14 @@ input {
   margin-bottom: 10px;
 }
 
+/* roomOrderTitle */
+
 .roomOrderTitle h3 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
+
+/* roomOrderProcess */
 
 .roomOrderProcess {
   display: flex;
@@ -123,9 +134,39 @@ input {
 
 .boxContent {
   font-size: 14px;
-  padding: 1rem;
+  padding: 0.5rem;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   border-radius: 0 0 5px 5px;
+  /* min-height: 200px; */
+}
+
+/* content RWD */
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 1060px) {
+  .left {
+    margin: auto;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content {
+    margin: auto;
+    margin: 0 20px;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+
+  .roomOrderInfo {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
 }
