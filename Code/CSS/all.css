@@ -240,6 +240,26 @@ input {
 @media screen and (max-width: 768px) {
 }
 
+/* toTop */
+
+.toTop {
+  position: fixed;
+  z-index: 99999;
+  right: 10px;
+  bottom: 10px;
+  transform: translateX(0);
+  transition: transform 0.5s;
+}
+
+.toTop i {
+  font-size: 25px;
+  color: #b77a00;
+}
+
+.toTop.hide {
+  transform: translateX(150%);
+}
+
 /* footer */
 
 .footer {

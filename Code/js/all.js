@@ -31,3 +31,27 @@ $(function () {
     $("#loadingSvg").delay(2000).fadeOut(1000);
   });
 });
+
+// toTop
+
+$(function () {
+  $(".toTopIcon").click(function (e) {
+    e.preventDefault();
+    $("html,body").animate(
+      {
+        scrollTop: 0,
+      },
+      600
+    );
+  });
+});
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 250) {
+    if ($(".toTop").hasClass("hide")) {
+      $(".toTop").toggleClass("hide");
+    }
+  } else {
+    $(".toTop").addClass("hide");
+  }
+});
