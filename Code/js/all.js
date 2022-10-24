@@ -23,4 +23,11 @@ function tabCutover() {
   });
 }
 
-// RWD
+// loading
+
+$(function () {
+  $(window).load(function () {
+    $("#loading").delay(2000).fadeOut(1000);
+    $("#loadingSvg").delay(2000).fadeOut(1000);
+  });
+});

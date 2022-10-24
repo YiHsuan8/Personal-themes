@@ -304,10 +304,11 @@ p {
   .cardImg {
     max-width: 300px;
     margin: auto;
+    text-align: center;
   }
 
   .cardImg img {
-    width: 100%;
+    width: 90%;
   }
 
   .dishesCard a {

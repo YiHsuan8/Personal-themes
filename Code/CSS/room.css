@@ -3,7 +3,6 @@
 h2 {
   text-align: center;
   padding-top: 50px;
-  /* padding-bottom: 20px; */
 }
 
 .now {
@@ -12,7 +11,6 @@ h2 {
 }
 
 .content {
-  /* max-width: 1300px; */
   margin: auto;
   background-image: url(../Img/bgi.jpg);
   padding: 0 15px;
@@ -174,11 +172,11 @@ h2 {
 
 .test ul li {
   font-size: 14px;
-  color: #656565;
+  color: #8e8c8c;
 }
 
 .roomBook {
-  min-width: 285px;
+  max-width: 285px;
 }
 
 h3 {
@@ -237,6 +235,10 @@ h3 {
     margin: auto;
   }
 
+  .text {
+    margin: auto;
+  }
+
   .text p {
     text-align: center;
   }
@@ -260,8 +262,8 @@ h3 {
     border-radius: 0 0 0 0;
   }
 
-  .roomMenu ul a {
-    /* width: 300px; */
+  .en {
+    padding-left: 0px;
   }
 }
 
@@ -290,5 +292,13 @@ h3 {
 
   .facility i {
     font-size: 30px;
+  }
+
+  .roomBook h3 {
+    margin-top: 0px;
+  }
+
+  .text h3 {
+    margin-top: 30px;
   }
 }

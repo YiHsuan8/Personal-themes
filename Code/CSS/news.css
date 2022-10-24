@@ -8,16 +8,13 @@
 .news {
   background-image: url(../Img/bgi.jpg);
   margin: 0px 10px;
+  background-color: #d9d9d9;
+  padding-top: 50px;
+  margin: auto;
 }
 
 h2 {
   text-align: center;
-}
-
-.news {
-  background-color: #d9d9d9;
-  padding-top: 50px;
-  margin: auto;
 }
 
 .choose ul {
