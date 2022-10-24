@@ -15,7 +15,7 @@ h2 {
   /* max-width: 1300px; */
   margin: auto;
   background-image: url(../Img/bgi.jpg);
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .roomMenu ul {
@@ -26,7 +26,7 @@ h2 {
 
 .roomMenu ul a {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5px;
   border-bottom: 2px solid transparent;
 }
 
@@ -233,7 +233,6 @@ h3 {
   }
 
   .roomtext {
-    /* flex-direction: column; */
     display: block;
     margin: auto;
   }
@@ -259,6 +258,10 @@ h3 {
   .rd img,
   .rd1 img {
     border-radius: 0 0 0 0;
+  }
+
+  .roomMenu ul a {
+    /* width: 300px; */
   }
 }
 

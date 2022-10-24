@@ -73,7 +73,7 @@ input {
 /* right */
 
 .right {
-  padding: 5% 0;
+  padding: 10px;
 }
 
 .right h2 {
@@ -118,6 +118,7 @@ input {
 .roomOrderProcess {
   display: flex;
   justify-content: space-around;
+  gap: 5px;
 }
 
 .box {
@@ -135,11 +136,11 @@ input {
 .boxContent {
   font-size: 14px;
   padding: 0.5rem;
+  text-align: start;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   border-radius: 0 0 5px 5px;
-  /* min-height: 200px; */
 }
 
 /* content RWD */
@@ -148,6 +149,7 @@ input {
 }
 @media screen and (max-width: 1060px) {
   .left {
+    width: 95%;
     margin: auto;
   }
 
