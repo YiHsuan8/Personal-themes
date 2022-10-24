@@ -1,5 +1,10 @@
 /* news */
 
+#now {
+  color: #a86a28;
+  border-bottom: 2px solid #a86a28;
+}
+
 .news {
   background-image: url(../Img/bgi.jpg);
   margin: 0px 10px;
@@ -33,9 +38,24 @@ h2 {
   border-bottom: 2px solid #a86a28;
 }
 
-#now {
+.tab-title li.active a {
   color: #a86a28;
   border-bottom: 2px solid #a86a28;
+}
+
+.classify {
+  color: #b70000;
+  margin-left: 10px;
+}
+
+.activityColor {
+  color: #b77a00;
+  margin-left: 10px;
+}
+
+.foodColor {
+  color: #b7007a;
+  margin-left: 10px;
 }
 
 .content {
@@ -96,7 +116,7 @@ h2 {
 
 .classify {
   color: #b70000;
-  margin-left: 36px;
+  margin-left: 10px;
 }
 
 .number {

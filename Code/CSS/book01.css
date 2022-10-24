@@ -77,12 +77,12 @@ input {
 }
 
 .right h2 {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
-.roomContent p {
+/* .roomContent p {
   margin: 5px;
-}
+} */
 
 .roomIcons {
   margin: 50px 0;
@@ -99,7 +99,7 @@ input {
 /* roomOrderInfo */
 
 .roomOrderInfo h3 {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .roomOrderInfo li {
@@ -161,7 +161,7 @@ input {
   }
 
   .icon {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .roomOrderInfo {

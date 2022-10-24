@@ -1,10 +1,50 @@
 /* banner */
-
 .banner {
-  background-image: url(../Img/banner1.jpg);
   height: 650px;
-  background-position: center center;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.banner > div {
+  background-image: url(../Img/banner1.jpg);
+  width: 100%;
+  height: 100%;
   background-size: cover;
+  background-position: center center;
+  position: absolute;
+  animation: slide 20s infinite;
+  opacity: 0;
+}
+
+.banner > div:nth-child(2) {
+  background-image: url(../Img/banner2.jpg);
+  animation-delay: 5s;
+}
+
+.banner > div:nth-child(3) {
+  background-image: url(../Img/banner3.jpg);
+  animation-delay: 10s;
+}
+
+.banner > div:nth-child(4) {
+  background-image: url(../Img/banner4.jpg);
+  animation-delay: 15s;
+}
+
+@keyframes slide {
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 /* banner RWD */
@@ -114,7 +154,7 @@
   border-bottom: 2px solid transparent;
 }
 
-#now {
+.tab-title li.active a {
   color: #a86a28;
   border-bottom: 2px solid #a86a28;
 }
@@ -186,7 +226,17 @@
   margin-left: 20px;
 }
 
+.activityColor {
+  color: #b77a00;
+}
+
+.foodColor {
+  color: #b7007a;
+}
+
 .discountMore {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: end;
 }
@@ -219,10 +269,11 @@
 @media screen and (max-width: 1220px) {
   .discountMenu {
     display: block;
+    flex-wrap: wrap;
   }
 
-  .RWD {
-    padding-bottom: 30px;
+  .discountRwd {
+    flex-wrap: wrap;
   }
 
   .discountMore {
@@ -239,7 +290,7 @@
   }
 
   .card {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   .RWD {
@@ -247,7 +298,7 @@
   }
 
   .discountMore a {
-    margin-top: 10px;
+    margin-top: 0px;
   }
 
   .discountMore {
@@ -256,6 +307,9 @@
 }
 
 /* Room introduction */
+.introductionRwd {
+  display: none;
+}
 
 .introduction {
   position: relative;
@@ -359,6 +413,22 @@
   .introductionImg {
     height: 300px;
   }
+
+  .introductionRwd {
+    background-image: url(../Img/bgi.jpg);
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+
+  .roomIntroduction {
+    padding-top: 10px;
+  }
+
+  .roomIntroduction h2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -378,7 +448,7 @@
 }
 
 .imgBlock {
-  width: 337px;
+  max-width: 337px;
   margin: 0px 31.5px;
 }
 

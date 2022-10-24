@@ -132,8 +132,9 @@ input {
     display: block;
     background-color: #a86a28;
     border-radius: 45px;
-    padding: 20px 80px;
+    padding: 15px 40px;
     margin-top: 40px;
+    color: aliceblue;
   }
 
   .logo {
@@ -228,14 +229,10 @@ input {
 
   .menu li {
     text-align: center;
-    /* width: 130px; */
     margin-top: 40px;
-    /* padding-bottom: 10px;
-    border-bottom: 1px solid #a86a28; */
   }
 
   .menu a {
-    color: #1c1c1c;
     font-size: 20px;
   }
 }

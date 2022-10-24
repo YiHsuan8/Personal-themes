@@ -60,20 +60,29 @@
                 <li>
                   <a href="./news.html">優惠消息</a>
                 </li>
+
                 <li>
                   <a href="./room.html">房型介紹</a>
                 </li>
+
                 <li>
                   <a href="./food.html">餐飲美饌</a>
                 </li>
+
                 <li>
                   <a href="./play.html">休閒設施</a>
                 </li>
+
                 <li>
                   <a href="#">周邊景點</a>
                 </li>
+
                 <li>
                   <a class="now" href="./us.html">聯絡我們</a>
+                </li>
+
+                <li>
+                  <a class="bookRwd" href="./book01.html">馬上訂房</a>
                 </li>
               </ul>
             </div>
@@ -110,65 +119,72 @@
                       <div>
                         <label class="questionlb" for="question">
                           問題分類
+                          <select class="question" name="question">
+                            <option value="" selected="" disabled="">
+                              請選擇問題
+                            </option>
+                            <option value="訂房洽詢">訂房洽詢</option>
+                            <option value="餐飲洽詢">餐飲洽詢</option>
+                            <option value="住宿相關">住宿相關</option>
+                            <option value="會議場地諮詢">會議場地諮詢</option>
+                            <option value="婚宴專案諮詢">婚宴專案諮詢</option>
+                          </select>
                         </label>
-                        <select class="question" name="question">
-                          <option value="" selected="" disabled="">
-                            請選擇問題
-                          </option>
-                          <option value="訂房洽詢">訂房洽詢</option>
-                          <option value="餐飲洽詢">餐飲洽詢</option>
-                          <option value="住宿相關">住宿相關</option>
-                          <option value="會議場地諮詢">會議場地諮詢</option>
-                          <option value="婚宴專案諮詢">婚宴專案諮詢</option>
-                        </select>
                       </div>
                     </li>
 
                     <li>
                       <div>
-                        <label class="namelb" for="name"> 姓名 </label>
-                        <input
-                          class="name"
-                          id="name"
-                          type="text"
-                          placeholder="請輸入姓名"
-                        />
+                        <label class="namelb" for="name">
+                          姓名
+                          <input
+                            class="name"
+                            id="name"
+                            type="text"
+                            placeholder="請輸入姓名"
+                        /></label>
                       </div>
                     </li>
 
                     <li>
                       <div>
-                        <label class="tellb" for="tel"> 聯絡電話 </label>
-                        <input
-                          class="tel"
-                          id="tel"
-                          type="text"
-                          placeholder="請輸入連絡電話"
-                        />
+                        <label class="tellb" for="tel">
+                          聯絡電話
+                          <input
+                            class="tel"
+                            id="tel"
+                            type="text"
+                            placeholder="請輸入連絡電話"
+                          />
+                        </label>
                       </div>
                     </li>
 
                     <li>
                       <div>
-                        <label class="mobilelb" for="mobile"> 行動電話 </label>
-                        <input
-                          class="mobile"
-                          id="mobile"
-                          type="text"
-                          placeholder="請輸入行動電話"
-                        />
+                        <label class="mobilelb" for="mobile">
+                          行動電話
+                          <input
+                            class="mobile"
+                            id="mobile"
+                            type="text"
+                            placeholder="請輸入行動電話"
+                          />
+                        </label>
                       </div>
                     </li>
 
                     <li>
                       <div>
-                        <label class="emaillb" for="email"> 電子信箱 </label>
-                        <input
-                          class="email"
-                          id="email"
-                          type="text"
-                          placeholder="請輸入電子信箱"
-                        />
+                        <label class="emaillb" for="email">
+                          電子信箱
+                          <input
+                            class="email"
+                            id="email"
+                            type="text"
+                            placeholder="請輸入電子信箱"
+                          />
+                        </label>
                       </div>
                     </li>
 
@@ -176,13 +192,13 @@
                       <div>
                         <label class="detailslb" for="details">
                           詳細內容
+                          <textarea
+                            class="details"
+                            name="details"
+                            id="details"
+                            placeholder="請輸入內容"
+                          ></textarea>
                         </label>
-                        <textarea
-                          class="details"
-                          name="details"
-                          id="details"
-                          placeholder="請輸入內容"
-                        ></textarea>
                       </div>
                     </li>
                   </ul>

@@ -32,7 +32,7 @@ h2 {
 .connection p {
   text-align: center;
   font-size: 16px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: #8e8c8c;
 }
 
@@ -44,8 +44,10 @@ h2 {
 .detailslb {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin: 15px 0;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .question,
@@ -59,6 +61,7 @@ h2 {
   background-color: #cac9c5;
   border: none;
   font-size: 16px;
+  border-radius: 5px;
 }
 
 .details {
@@ -72,13 +75,13 @@ h2 {
 }
 
 .submit {
-  margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
   background-color: #b78958;
   color: aliceblue;
   border: 1px solid #b78958;
+  border-radius: 5px;
 }
 
 .submit:hover {
@@ -121,7 +124,6 @@ h2 {
   .tel,
   .mobile,
   .email {
-    margin-bottom: 30px;
     width: 100%;
   }
 

@@ -35,12 +35,12 @@ h2 {
 }
 
 .listtextrig {
-  width: 470px;
+  max-width: 470px;
   padding: 1rem;
 }
 
 .listtextlef {
-  width: 470px;
+  max-width: 470px;
   padding: 1rem;
 }
 
@@ -106,6 +106,10 @@ h3 {
   .listtextrig,
   .listtextlef {
     text-align: center;
+  }
+
+  .list p {
+    font-size: 14px;
   }
 }
 

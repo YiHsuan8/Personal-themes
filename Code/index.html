@@ -18,13 +18,15 @@
       href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+TC&family=Noto+Serif+SC:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <script
       src="https://kit.fontawesome.com/b69e38e683.js"
       crossorigin="anonymous"
     ></script>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/jquery-3.6.1.js"></script>
+    <script src="./js/all.js"></script>
 
     <title>悠遊</title>
   </head>
@@ -84,7 +86,7 @@
                 </li>
 
                 <li>
-                  <a class="bookRwd" href="./us.html">馬上訂房</a>
+                  <a class="bookRwd" href="./book01.html">馬上訂房</a>
                 </li>
               </ul>
             </div>
@@ -96,7 +98,12 @@
 
       <!-- banner -->
 
-      <div class="banner"></div>
+      <div class="banner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
       <!-- booking field -->
 
@@ -120,6 +127,7 @@
           <label for="person">入住人數:</label>
           <select name="" id="person">
             <option value="">1人</option>
+            scroll
             <option value="">2人</option>
             <option value="">3人</option>
             <option value="">4人</option>
@@ -135,111 +143,315 @@
       <div class="discount">
         <h2 class="center">優惠消息</h2>
 
-        <div class="classification">
-          <ul id="">
-            <li><a id="now" href="#">住房優惠</a></li>
-            |
-            <li><a href="#">餐飲優惠</a></li>
-            |
-            <li><a href="#">活動情報</a></li>
-          </ul>
-        </div>
+        <div id="tab-demo">
+          <div class="classification">
+            <ul class="tab-title">
+              <li class="active">
+                <a id="now" href="javascript:;" data-tablink="one">住房優惠</a>
+              </li>
+              |
+              <li>
+                <a href="javascript:;" data-tablink="two">餐飲優惠</a>
+              </li>
+              |
+              <li>
+                <a href="javascript:;" data-tablink="three">活動情報</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="discountBar">
-          <div class="discountMenu">
-            <div class="discountRwd RWD">
-              <div class="card">
-                <a href="#">
-                  <div class="discountCard">
-                    <div class="pic">
-                      <img src="./Img/room1" alt="room" />
+          <div class="discountBar tab-inner-wrap">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-anchor-placement="top"
+              id="one"
+              class="discountMenu tab-inner"
+            >
+              <div class="discountRwd">
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room1" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify">住房優惠</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
                     </div>
-                    <div class="text">
-                      <span>2022/9/27~ 2022/10/27</span>
-                      <span class="classify">住房優惠</span>
-                      <br />
-                      <span>「映•虹」秋楓專案</span>
-                      <br />
-                      <span>一泊一食。每晚$6000起</span>
-                    </div>
-                    <div class="text1">
-                      <span>
-                        楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
+                  </a>
+                </div>
 
-              <div class="card">
-                <a href="#">
-                  <div class="discountCard">
-                    <div class="pic">
-                      <img src="./Img/room2" alt="room" />
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room2" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify">住房優惠</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
                     </div>
-                    <div class="text">
-                      <span>2022/9/27~ 2022/10/27</span>
-                      <span class="classify">住房優惠</span>
-                      <br />
-                      <span>「映•虹」秋楓專案</span>
-                      <br />
-                      <span>一泊一食。每晚$6000起</span>
+                  </a>
+                </div>
+
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room3" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify">住房優惠</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
                     </div>
-                    <div class="text1">
-                      <span>
-                        楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
-                      </span>
+                  </a>
+                </div>
+
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room4" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify">住房優惠</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div class="discountRwd">
-              <div class="card">
-                <a href="#">
-                  <div class="discountCard">
-                    <div class="pic">
-                      <img src="./Img/room3" alt="room" />
+            <div id="two" class="discountMenu tab-inner">
+              <div class="discountRwd">
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room2" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify foodColor">餐飲優惠</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
                     </div>
-                    <div class="text">
-                      <span>2022/9/27~ 2022/10/27</span>
-                      <span class="classify">住房優惠</span>
-                      <br />
-                      <span>「映•虹」秋楓專案</span>
-                      <br />
-                      <span>一泊一食。每晚$6000起</span>
-                    </div>
-                    <div class="text1">
-                      <span>
-                        楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
-                      </span>
-                    </div>
-                  </div>
-                </a>
-              </div>
+                  </a>
+                </div>
 
-              <div class="card">
-                <a href="#">
-                  <div class="discountCard">
-                    <div class="pic">
-                      <img src="./Img/room4" alt="room" />
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room3" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify foodColor">餐飲優惠</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
                     </div>
-                    <div class="text">
-                      <span>2022/9/27~ 2022/10/27</span>
-                      <span class="classify">住房優惠</span>
-                      <br />
-                      <span>「映•虹」秋楓專案</span>
-                      <br />
-                      <span>一泊一食。每晚$6000起</span>
+                  </a>
+                </div>
+
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room4" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify foodColor">餐飲優惠</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
                     </div>
-                    <div class="text1">
-                      <span>
-                        楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
-                      </span>
+                  </a>
+                </div>
+
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room1" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify foodColor">餐飲優惠</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div id="three" class="discountMenu tab-inner">
+              <div class="discountRwd">
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room4" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify activity">活動情報</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room1" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify activity">活動情報</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room2" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify activity">活動情報</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="card">
+                  <a href="#">
+                    <div class="discountCard">
+                      <div class="pic">
+                        <img src="./Img/room3" alt="room" />
+                      </div>
+                      <div class="text">
+                        <span>2022/9/27~ 2022/10/27</span>
+                        <span class="classify activity">活動情報</span>
+                        <br />
+                        <span>「映•虹」秋楓專案</span>
+                        <br />
+                        <span>一泊一食。每晚$6000起</span>
+                      </div>
+                      <div class="text1">
+                        <span>
+                          楓紅落葉之際，描繪出雋永的記憶，秋意正濃，如美酒濃厚之醇蘊，曖曖光暈映眼簾，留住每位旅人的心神。
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -253,9 +465,9 @@
       <!-- Room introduction -->
 
       <div class="introduction">
-        <div class="introductionImg">
-          <!-- <img src="./Img/other1.jpg" alt="" /> -->
-        </div>
+        <h2 class="introductionRwd">客房介紹</h2>
+        <div class="introductionImg"></div>
+
         <div class="roomIntroduction">
           <h2>客房介紹</h2>
           <div class="txt">
@@ -389,5 +601,11 @@
         </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
