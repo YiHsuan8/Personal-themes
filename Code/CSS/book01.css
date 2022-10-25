@@ -148,17 +148,21 @@ input {
 
 @media screen and (max-width: 1200px) {
 }
+
 @media screen and (max-width: 1060px) {
   .left {
-    width: 95%;
+    width: 100%;
     margin: auto;
+    padding: 20px 24px;
+    margin-bottom: 10px;
+  }
+
+  .right {
+    padding-bottom: 30px;
   }
 
   .content {
-    flex-direction: column;
-  }
-
-  .content {
+    flex-direction: column-reverse;
     margin: auto;
     margin: 0 20px;
   }
@@ -170,6 +174,12 @@ input {
   .roomOrderInfo {
     width: 100%;
   }
+
+  h2 {
+    text-align: center;
+    padding: 20px 0;
+  }
 }
+
 @media screen and (max-width: 768px) {
 }

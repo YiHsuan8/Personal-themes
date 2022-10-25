@@ -183,7 +183,7 @@
   border-bottom: 2px solid transparent;
 }
 
-.tab-title li.active a {
+.tabTitle li.active a {
   color: #a86a28;
   border-bottom: 2px solid #a86a28;
 }

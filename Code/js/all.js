@@ -5,19 +5,19 @@ $(document).ready(function () {
 });
 
 function tabCutover() {
-  $(".tab-title li.active").each(function () {
+  $(".tabTitle li.active").each(function () {
     var tablink = $(this).find("a").data("tablink");
 
     $("#" + tablink)
       .show()
-      .siblings(".tab-inner")
+      .siblings(".tabInner")
       .hide();
   });
 
-  $(".tab-title li").click(function () {
+  $(".tabTitle li").click(function () {
     $("#" + $(this).find("a").data("tablink"))
       .show()
-      .siblings(".tab-inner")
+      .siblings(".tabInner")
       .hide();
     $(this).addClass("active").siblings(".active").removeClass("active");
   });
@@ -47,7 +47,7 @@ $(function () {
 });
 
 $(window).scroll(function () {
-  if ($(window).scrollTop() > 250) {
+  if ($(window).scrollTop() > 200) {
     if ($(".toTop").hasClass("hide")) {
       $(".toTop").toggleClass("hide");
     }
