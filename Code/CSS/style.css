@@ -315,7 +315,15 @@
 
 @media screen and (max-width: 768px) {
   .discountRwd {
-    display: block;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: flex-start;
+  }
+
+  .discountRwd::-webkit-scrollbar {
+    display: none;
   }
 
   .card {
