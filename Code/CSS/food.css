@@ -179,6 +179,10 @@ p {
   transition: all 0.15s linear;
 }
 
+.text {
+  display: none;
+}
+
 /* foodDescribe RWD */
 
 @media screen and (max-width: 1200px) {
@@ -279,6 +283,10 @@ p {
   padding-top: 50%;
 }
 
+.text {
+  display: none;
+}
+
 /* dishes RWD */
 
 @media screen and (max-width: 1200px) {
@@ -321,6 +329,13 @@ p {
 
   .dishes {
     margin: 0 20px;
+  }
+
+  .text {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 8px;
   }
 }
 
