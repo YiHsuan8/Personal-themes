@@ -133,7 +133,8 @@ h2 {
 
 .text p {
   font-size: 14px;
-  color: #4a4a4a;
+  color: #8e8c8c;
+  margin-bottom: 30px;
 }
 
 .facility {
@@ -167,7 +168,6 @@ h2 {
   color: #7f705f;
   font-size: 18px;
   margin-bottom: 10px;
-  /* font-weight: bold; */
 }
 
 .test ul li {
@@ -177,6 +177,7 @@ h2 {
 
 .roomBook {
   max-width: 285px;
+  margin-top: 30px;
 }
 
 .roomBookBottom {
@@ -219,6 +220,10 @@ h3 {
   transition: all 0.1s linear;
   background-color: transparent;
   color: #b78958;
+}
+
+#concept {
+  display: none;
 }
 
 /* content RWD */
@@ -270,6 +275,10 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  h2 {
+    padding-top: 25px;
+  }
+
   .left {
     width: 100%;
   }
@@ -301,4 +310,86 @@ h3 {
   .text h3 {
     margin-top: 30px;
   }
+
+  .text p {
+    margin-bottom: 0px;
+  }
+
+  #concept {
+    display: inline-block;
+    margin-bottom: 25px;
+    margin-top: 0px;
+  }
+
+  .newww {
+    padding-bottom: 0;
+  }
+}
+
+/* accordion */
+
+.accordion {
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.accordion ul {
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.accordion ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.accBtn {
+  background: #636363;
+  color: aliceblue;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  text-align: start;
+  min-width: 100%;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+.accBtn:before,
+.accBtn:after {
+  background-color: aliceblue;
+  content: "";
+  height: 2px;
+  margin-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 14px;
+}
+
+.accBtn::before {
+  transform: rotate(-90deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.accBtn.active:before {
+  transform: rotate(0deg);
+}
+
+.accBtn.active h2,
+.accBtn:focus h2 {
+  position: relative;
+}
+
+.answer {
+  background-color: aliceblue;
+  padding: 10px;
+  color: #636363;
+  display: none;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+  text-align: start;
 }

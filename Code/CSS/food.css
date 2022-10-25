@@ -319,23 +319,17 @@ p {
     width: 90%;
   }
 
-  .dishesCard a {
-    position: static;
-  }
-
   .dishesCard a::after {
-    display: none;
+    background-color: transparent;
+    writing-mode: horizontal-tb;
+    bottom: 350px;
+    color: aliceblue;
+    text-shadow: 0.2em 0.2em 0.4em black;
+    font-size: 20px;
   }
 
   .dishes {
     margin: 0 20px;
-  }
-
-  .text {
-    display: block;
-    text-align: center;
-    font-size: 18px;
-    margin-top: 8px;
   }
 }
 
