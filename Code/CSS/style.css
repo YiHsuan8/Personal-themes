@@ -138,6 +138,14 @@
   border-radius: 7px;
 }
 
+#checkIn,
+#checkOut,
+#room,
+#person {
+  background-color: rgba(236, 236, 236, 0.4);
+  color: black;
+}
+
 /*  booking field  RWD*/
 
 @media screen and (max-width: 1200px) {

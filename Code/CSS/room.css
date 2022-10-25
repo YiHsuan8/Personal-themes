@@ -179,6 +179,10 @@ h2 {
   max-width: 285px;
 }
 
+.roomBookBottom {
+  margin-bottom: 30px;
+}
+
 h3 {
   padding-bottom: 5px;
   display: inline-block;
@@ -239,13 +243,8 @@ h3 {
     margin: auto;
   }
 
-  .text p {
-    text-align: center;
-  }
-
-  .title,
-  .en {
-    text-align: center;
+  .title {
+    padding-left: 0px;
   }
 
   .right {
