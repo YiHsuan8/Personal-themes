@@ -40,225 +40,223 @@
       </a>
     </div>
 
-    <div class="wrap">
-      <!-- header -->
+    <!-- header -->
 
-      <div class="header">
-        <nav class="navabr">
-          <div class="logo">
-            <h1>
-              <a href="./index.html"><img src="./Img/LOGO.png" alt="Logo" /></a>
-            </h1>
+    <header class="header">
+      <nav class="navabr">
+        <div class="logo">
+          <h1>
+            <a href="./index.html"><img src="./Img/LOGO.png" alt="Logo" /></a>
+          </h1>
+        </div>
+
+        <!-- 漢堡 -->
+
+        <div class="hb">
+          <!-- 漢堡Checkbox -->
+
+          <input type="checkbox" id="toggler" />
+
+          <!-- menu_btn -->
+
+          <label for="toggler" class="menu_btn">
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="./news.html">優惠消息</a>
+              </li>
+
+              <li>
+                <a href="./room.html">房型介紹</a>
+              </li>
+
+              <li>
+                <a href="./food.html">餐飲美饌</a>
+              </li>
+
+              <li>
+                <a href="./play.html">休閒設施</a>
+              </li>
+
+              <li>
+                <a href="#">周邊景點</a>
+              </li>
+
+              <li>
+                <a class="now" href="./us.html">聯絡我們</a>
+              </li>
+
+              <li>
+                <a class="bookRwd" href="./book01.html">馬上訂房</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="book"><a href="./book01.html">線上訂房</a></button>
+      </nav>
+    </header>
+
+    <!-- us -->
+    <section class="us">
+      <h2>聯絡我們</h2>
+
+      <div class="content">
+        <div class="box">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2490357640313!2d121.22283401478762!3d24.957640347502657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1664338190951!5m2!1szh-TW!2stw"
+              width="600"
+              height="700"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
 
-          <!-- 漢堡 -->
+          <div class="connection">
+            <p>歡迎詢問住宿、訂房等問題，或與我們分享您的住宿心得與建議。</p>
+            <div class="formbox">
+              <form class="form" action="">
+                <ul>
+                  <li>
+                    <div>
+                      <label class="questionlb" for="question">
+                        問題分類
+                        <select class="question" name="question">
+                          <option value="" selected="" disabled="">
+                            請選擇問題
+                          </option>
+                          <option value="訂房洽詢">訂房洽詢</option>
+                          <option value="餐飲洽詢">餐飲洽詢</option>
+                          <option value="住宿相關">住宿相關</option>
+                          <option value="會議場地諮詢">會議場地諮詢</option>
+                          <option value="婚宴專案諮詢">婚宴專案諮詢</option>
+                        </select>
+                      </label>
+                    </div>
+                  </li>
 
-          <div class="hb">
-            <!-- 漢堡Checkbox -->
+                  <li>
+                    <div>
+                      <label class="namelb" for="name">
+                        姓名
+                        <input
+                          class="name"
+                          id="name"
+                          type="text"
+                          placeholder="請輸入姓名"
+                      /></label>
+                    </div>
+                  </li>
 
-            <input type="checkbox" id="toggler" />
+                  <li>
+                    <div>
+                      <label class="tellb" for="tel">
+                        聯絡電話
+                        <input
+                          class="tel"
+                          id="tel"
+                          type="text"
+                          placeholder="請輸入連絡電話"
+                        />
+                      </label>
+                    </div>
+                  </li>
 
-            <!-- menu_btn -->
+                  <li>
+                    <div>
+                      <label class="mobilelb" for="mobile">
+                        行動電話
+                        <input
+                          class="mobile"
+                          id="mobile"
+                          type="text"
+                          placeholder="請輸入行動電話"
+                        />
+                      </label>
+                    </div>
+                  </li>
 
-            <label for="toggler" class="menu_btn">
-              <div class="hamburger">
-                <span></span>
-                <span></span>
-              </div>
-            </label>
+                  <li>
+                    <div>
+                      <label class="emaillb" for="email">
+                        電子信箱
+                        <input
+                          class="email"
+                          id="email"
+                          type="text"
+                          placeholder="請輸入電子信箱"
+                        />
+                      </label>
+                    </div>
+                  </li>
 
-            <div class="menu">
-              <ul>
-                <li>
-                  <a href="./news.html">優惠消息</a>
-                </li>
+                  <li>
+                    <div>
+                      <label class="detailslb" for="details">
+                        詳細內容
+                        <textarea
+                          class="details"
+                          name="details"
+                          id="details"
+                          placeholder="請輸入內容"
+                        ></textarea>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
 
-                <li>
-                  <a href="./room.html">房型介紹</a>
-                </li>
-
-                <li>
-                  <a href="./food.html">餐飲美饌</a>
-                </li>
-
-                <li>
-                  <a href="./play.html">休閒設施</a>
-                </li>
-
-                <li>
-                  <a href="#">周邊景點</a>
-                </li>
-
-                <li>
-                  <a class="now" href="./us.html">聯絡我們</a>
-                </li>
-
-                <li>
-                  <a class="bookRwd" href="./book01.html">馬上訂房</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <button class="book"><a href="./book01.html">線上訂房</a></button>
-        </nav>
-      </div>
-
-      <!-- us -->
-      <div class="us">
-        <h2>聯絡我們</h2>
-
-        <div class="content">
-          <div class="box">
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.2490357640313!2d121.22283401478762!3d24.957640347502657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823ea50c732a5%3A0x1b5e6ee66e9fec49!2z57ev6IKyVGliYU1l6ZmE6Kit5Lit5aOi6IG36KiT5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1664338190951!5m2!1szh-TW!2stw"
-                width="600"
-                height="700"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-
-            <div class="connection">
-              <p>歡迎詢問住宿、訂房等問題，或與我們分享您的住宿心得與建議。</p>
-              <div class="formbox">
-                <form class="form" action="">
-                  <ul>
-                    <li>
-                      <div>
-                        <label class="questionlb" for="question">
-                          問題分類
-                          <select class="question" name="question">
-                            <option value="" selected="" disabled="">
-                              請選擇問題
-                            </option>
-                            <option value="訂房洽詢">訂房洽詢</option>
-                            <option value="餐飲洽詢">餐飲洽詢</option>
-                            <option value="住宿相關">住宿相關</option>
-                            <option value="會議場地諮詢">會議場地諮詢</option>
-                            <option value="婚宴專案諮詢">婚宴專案諮詢</option>
-                          </select>
-                        </label>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div>
-                        <label class="namelb" for="name">
-                          姓名
-                          <input
-                            class="name"
-                            id="name"
-                            type="text"
-                            placeholder="請輸入姓名"
-                        /></label>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div>
-                        <label class="tellb" for="tel">
-                          聯絡電話
-                          <input
-                            class="tel"
-                            id="tel"
-                            type="text"
-                            placeholder="請輸入連絡電話"
-                          />
-                        </label>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div>
-                        <label class="mobilelb" for="mobile">
-                          行動電話
-                          <input
-                            class="mobile"
-                            id="mobile"
-                            type="text"
-                            placeholder="請輸入行動電話"
-                          />
-                        </label>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div>
-                        <label class="emaillb" for="email">
-                          電子信箱
-                          <input
-                            class="email"
-                            id="email"
-                            type="text"
-                            placeholder="請輸入電子信箱"
-                          />
-                        </label>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div>
-                        <label class="detailslb" for="details">
-                          詳細內容
-                          <textarea
-                            class="details"
-                            name="details"
-                            id="details"
-                            placeholder="請輸入內容"
-                          ></textarea>
-                        </label>
-                      </div>
-                    </li>
-                  </ul>
-
-                  <div class="formsubmit">
-                    <label for="submit">
-                      <input
-                        type="button"
-                        class="submit"
-                        id="submit"
-                        value="送出表單"
-                      />
-                    </label>
-                  </div>
-                </form>
-              </div>
+                <div class="formsubmit">
+                  <label for="submit">
+                    <input
+                      type="button"
+                      class="submit"
+                      id="submit"
+                      value="送出表單"
+                    />
+                  </label>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- footer -->
+    <!-- footer -->
 
-      <div class="footer">
-        <div class="footercontent">
-          <div class="followIcon">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-          </div>
+    <footer class="footer">
+      <div class="footercontent">
+        <div class="followIcon">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
 
-          <div class="describe">
-            <p>地址:南投縣緯育路888巷99號 | 電話:(02)23576-1543</p>
-          </div>
+        <div class="describe">
+          <p>地址:南投縣緯育路888巷99號 | 電話:(02)23576-1543</p>
+        </div>
 
-          <hr />
+        <hr />
 
-          <div class="copyright">
-            <p>
-              本網站為緯育TibaMe前端設計工程師班學員專題作品，本平台僅供學習、展示之用
-            </p>
-            <p>
-              若有侵權疑慮，您可私訊TibaMe-前端設計工程師
-              養成班，後續會由專人協助處理
-            </p>
-          </div>
+        <div class="copyright">
+          <p>
+            本網站為緯育TibaMe前端設計工程師班學員專題作品，本平台僅供學習、展示之用
+          </p>
+          <p>
+            若有侵權疑慮，您可私訊TibaMe-前端設計工程師
+            養成班，後續會由專人協助處理
+          </p>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
