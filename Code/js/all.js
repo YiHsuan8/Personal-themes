@@ -78,7 +78,7 @@ $(function () {
   let divWidth = $("#sliderBoard").width();
   let imgCount = $("#content li").length;
 
-  for (let i = 0; i < imgCount; i++) {
+  for (let i = 0; i < imgCount - 1; i++) {
     $("#contentButton").append(`<li></li>`);
   }
   $("#contentButton li:nth-child(1)").addClass("clicked");
