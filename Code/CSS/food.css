@@ -379,9 +379,9 @@ p {
   }
 
   #contentButton li {
-    width: 40px;
-    height: 20px;
-    border-radius: 10px;
+    width: 20px;
+    height: 3px;
+    border-radius: 1.5px;
     background: #ccc;
     display: inline-block;
     margin: 50px 5px;
